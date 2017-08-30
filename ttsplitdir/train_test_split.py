@@ -52,7 +52,7 @@ def train_test_split(data, test_prop):
     test = data[-n_test:]
     # check nothing's been lost
     assert len(train) + len(test) == len(data)
-    return data[:n_train], data[-n_test:]
+    return train, test
 
 
 def get_label(filename):
