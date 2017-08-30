@@ -106,8 +106,3 @@ def train_test_split_dir(source, destination, test_prop=0.3):
     for i, j in zip(original_paths, new_paths):
         check_dir(j) # check if destination directory exists, create if needed
         shutil.copy2(i, j)
-
-
-if __name__ == "__main__":
-    test_dir = "tests/test_dir"
-    train_test_split_dir(test_dir, "/home/scott/test_tt_split")
