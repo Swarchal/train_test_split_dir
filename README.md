@@ -79,7 +79,7 @@ new_data_split
 
 
 ```python
-train_test_split(source, destination, test_prop)
+train_test_split_dir(source, destination, test_prop)
 ```
 
 **Note** the data is copied.
